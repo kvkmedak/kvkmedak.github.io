@@ -133,6 +133,11 @@ h6,
   color: #1c5c93;
   text-decoration: none;
 }
+#banner{
+  background: #fff;
+  font-size: 15px;
+  padding: 12px;
+}
 
 #header .logo img {
   padding: 0;
