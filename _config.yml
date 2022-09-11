@@ -1,0 +1,51 @@
+title: kvkmedak
+email: help@kvkmedak.org
+description: >- 
+  Dr.Ramanaidu-Ekalavya Grameena Vikas foundation, Krishi Vigyan Kendra, Medak (KVK-Medak)is a district level Agriculture Science Center established in May, 2017 under the affiliation of Indian Council of Agricultural Research (ICAR), New Delhi. Ekalavya Grameena Vikas Foundation (EGVF) is the host organization of KVK-Medak
+baseurl: ""
+url: "https://kvkmedak.org"
+twitter_username: kvkmedak
+github_username:  kvkmedak
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: true
+  startings: [html, head, body]
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Google Tag Manager Integration
+google-tag-manager-id: GTM-MTFQ8TF
+google-analytics-id: G-E0ZW5NRN6K
+# SEO 
+logo: ""
+social:
+  name: kvkmedak
+  links:
+    - https://twitter.com/kvkmedak
+    - https://www.facebook.com/jinna.balu
+    - https://www.linkedin.com/in/jinna-balu-20368995/
+    - https://github.com/kvkmedak
+    - https://kvkmedak.medium.com/
+    - https://kvkmedak.com/
+
+## Verify ownership with several services at once using the following format
+webmaster_verifications:
+  google: xVEmwX6PFrFabJWC30aDEuvWSbnr11QegyS-B9UbDB8
+  bing: 1E642F36EC0479DC69135F989CDC274A
+  yandex: 43039f2f4b41e2c3
+  baidu: 1234
+  facebook: 1234
+  ahrefs: 51bddb95e8fc130687b6ef65736ca7afb4c52168083b13a5e11eb5f1f2a536d7
+
+  
