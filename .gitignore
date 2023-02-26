@@ -3,7 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-
+*.DS_Store
 
 # User-specific stuff
 .idea/**/workspace.xml
