@@ -3,7 +3,7 @@ services:
   site:
     container_name: kvkmedak
     command: jekyll serve --watch
-    image: jekyll/jekyll:4.0
+    image: jekyll/jekyll:latest
     volumes:
       - $PWD:/srv/jekyll
     ports:
