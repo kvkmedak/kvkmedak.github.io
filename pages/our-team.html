@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Our Team
+title: "Our Team"
 description: "Indian Council of Agricultural Research Ekalavya Grammena Vikas Foundation Foundation Krishi Vigyan
 Kendra (KVK), Medak (Telangana)"
 image: ""
@@ -15,11 +15,14 @@ permalink: /our-team
     <section id="team" class="team">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="row">
+                {% assign team = site.data.team %}
+                {% for member in team %}
+                {% if member.image_url %}
                 <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up">
                     <div class="member">
-                        <div class="pic"><img src="assets/img/team/vinod.jpeg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="assets/img/team/{{member.image_url}}" class="img-fluid" alt="{{member.member.Name}}"></div>
                         <div class="member-info">
-                            <h4>T Vinod Rao</h4> <span>Chairman</span>
+                            <h4>{{member.Name}}</h4> <span>{{member.Designation}}</span>
                             <div class="social">
                                 <a href="">
                                     <i class="bi bi-twitter"></i>
@@ -37,175 +40,8 @@ permalink: /our-team
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/team/nalkar.jpeg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            
-
-                            <h4>Dr. Sambhaji Dattatray Nalkar</h4> <span>Senior Scientist & Head</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/team/ravi.jpeg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Mr. Ravi Palthiya</h4> <span>In-charge Head
-                                Subject Matter Specialist
-                                (Plant Protection)</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/team/srinivas.jpeg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Mr. Srinivas Mamindla</h4>
-                            <span>Subject Matter Specialist (Horticulture)</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                    <div class="member">
-                        <div class="pic">
-                            <img src="assets/img/team/uday-kumar.jpeg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Mr. M. Uday Kumar</h4>
-                            <span>Subject Matter Specialist (Agriculture Engineer)</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/team/srikanth.jpeg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Sreekanth Maddina</h4>
-                            <span>
-                                Subject Matter Specialist (Agriculture Extension)
-                            </span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/team/bhargavi.jpeg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>G. Bhargavi</h4>
-                            <span>Subject Matter Specialist Home Science</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/team/narsimlu.jpeg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Mr. D. Narsimlu</h4>
-                            <span>Programme Assitant Computers</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
+                {% endif %}
+                {% endfor %}              
             </div>
         </div>
     </section>

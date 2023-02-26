@@ -1,0 +1,35 @@
+---
+layout: page
+title: Demo Units
+description: "Farmer Producer Organisation - KVK Medak | Demo Units"
+permalink: /demo-units
+---
+<section id="portfolio" class="portfolio">
+    <div class="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+            <h2>Demo Units</h2>
+            <p>Demo for leanring and implementations at KVK</p>
+        </div>
+        <div class="row portfolio-container" style="position: relative; height: 1026px;">
+            {% assign data = site.data.demounits %}
+            {% for row in data %}
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+                <div class="portfolio-wrap"> <img src="assets/img/demounits/{{row.image}}" class="img-fluid" alt="{{row.title}}">
+                    <div class="portfolio-info">
+                        <h4>{{row.title}}</h4>
+                        {% if row.description %}
+                        <p>{{row.description}}</p>
+                        {% endif %}
+                        <div class="portfolio-links"> <a href="assets/img/demounits/{{row.image}}"
+                                data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{row.title}}"><i
+                                    class="bi bi-plus"></i></a> <a href="{{row.url}}" title="More Details"><i
+                                    class="bi bi-link"></i></a></div>
+                    </div>
+                </div>
+                <br>
+                <p class="text-center">{{row.title}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
