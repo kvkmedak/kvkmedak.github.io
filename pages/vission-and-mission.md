@@ -1,23 +1,30 @@
 ---
 layout: page
-title: Vermi Compost Under Mango Orchard
-description: "Farmer Producer Organisation - KVK Medak | Farmer Producer organisation | FPO | Vermi Compost Under Mango
-Orchard"
+title: "KVK Medak - Vision | Mission | Self Resilient Integrated Farming System"
+description: "Building a self sustainable, eco friendly, integrated farming system that produces healthy farm produce, preserves soil fertility and improves  farmers' incomes."
 permalink: /vission-and-mission
 ---
+<br>
+<br>
+<br>
+<br>
 
 ## Vision
 
-“Building a Self Resilient Integrated Farming System”
+Building a self sustainable, eco friendly, integrated farming system that produces healthy farm produce, preserves soil fertility and improves  farmers' incomes.
 
 ## Mission
 
-To implement those practices that improves Soil Health and Productivity.
+- To implement those practices that improves Soil Health and Productivity.
+- To harvest rain water, recharge ground water and recycle waste water.
+- To diversify the sources of income through inclusion of dairy, poultry, sericulture etc.
+- To conserve bio-diversity through eco-friendly methods of pest management.
+- To establish value addition centre for the farm produce.
 
-To harvest rain water, recharge ground water and recycle waste water.
+<br>
+The main aim of KVK-Medak is to reduce the time lag between generation of technology at the research institutions and its transfer to the farmer's field for increasing production, productivity and income from the agriculture and allied sectors on a sustained basis with emphasis on non-chemical methods of Soil fertility and Pest management. 
 
-To diversify the sources of income through inclusion of dairy, poultry, sericulture etc.
-
-To conserve bio-diversity through eco-friendly methods of pest management.
-
-To establish value addition centre for the farm produce.
+<br>
+<br>
+<br>
+<br>
