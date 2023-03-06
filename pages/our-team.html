@@ -18,30 +18,41 @@ permalink: /our-team
                 {% assign team = site.data.team %}
                 {% for member in team %}
                 {% if member.image_url %}
-                <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/team/{{member.image_url}}" class="img-fluid" alt="{{member.member.Name}}"></div>
-                        <div class="member-info">
-                            <h4>{{member.Name}}</h4>
-                            <span>{{member.Designation}}</span> 
-                            <span>{{member.MobileNo}}</span>
-                            
-                            <div class="social">
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="assets/img/team/{{member.image_url}}" class="card-img-top" alt="{{member.member.Name}}">
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <br>
+                                <h4>{{member.Name}}</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>{{member.Designation}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>{{member.MobileNo}} |
+                                    <a href="">
+                                        <i class="bi bi-facebook"></i>
+                                    </a> |
+                                    <a href="">
+                                        <i class="bi bi-instagram"></i>
+                                    </a> |
+                                    <a href="">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
+                    <br>
                 </div>
                 {% endif %}
-                {% endfor %}              
+                {% endfor %}
             </div>
         </div>
     </section>
