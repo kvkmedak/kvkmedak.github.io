@@ -1,0 +1,39 @@
+---
+layout: page
+title: Distinguished Visitors
+description: "Farmer Producer Organisation - KVK Medak | Distinguished Visitors"
+permalink: /distinguished-visitors
+---
+<section id="portfolio" class="portfolio">
+    <div class="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div>
+            <h1>Distinguished Visitors</h1>
+            <hr>
+            <br>
+        </div>
+        <div class="row portfolio-container" style="position: relative; height: 1026px;">
+            {% assign data = site.data.distinguished-visitors %}
+            {% for row in data %}
+            {% if row.image_url %}
+            <div class="col-lg-6 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+                <div class="portfolio-wrap"> <img src="assets/img/visitors/{{row.image_url}}" class="img-fluid"
+                        alt="{{row.title}}">
+                    <div class="portfolio-info">
+                        <br>
+                        <br>
+                        <h6>{{row.title}}</h6>
+                        <div class="portfolio-links">
+                            <a href="assets/img/visitors/{{row.image_url}}" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="{{row.title}}"><i class="bi bi-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="text-center">{{row.title}}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
