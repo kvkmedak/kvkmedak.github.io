@@ -13,6 +13,7 @@ permalink: /demo-units
         <div class="row portfolio-container" style="position: relative; height: 1026px;">
             {% assign data = site.data.demounits %}
             {% for row in data %}
+            {% if row.image %}
             <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
                 <div class="portfolio-wrap"> <img src="assets/img/demounits/{{row.image}}" class="img-fluid"
                         alt="{{row.title}}">
@@ -36,6 +37,7 @@ permalink: /demo-units
                 <br>
                 <p class="text-center">{{row.title}}</p>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>

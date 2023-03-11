@@ -995,6 +995,10 @@ section {
 .portfolio .portfolio-wrap img {
   transition: 0.3s;
 }
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .portfolio .portfolio-wrap .portfolio-info {
   display: flex;

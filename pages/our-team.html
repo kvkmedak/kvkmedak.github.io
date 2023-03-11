@@ -15,13 +15,14 @@ permalink: /our-team
     <section id="team" class="team">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="row">
-                {% assign team = site.data.team %}
+                {% assign team = site.data.team-data %}
                 {% for member in team %}
                 {% if member.image_url %}
                 <div class="col-md-4 text-center">
                     <div class="card">
-                        <img src="assets/img/team/{{member.image_url}}" class="card-img-top" alt="{{member.member.Name}}">
-                        
+                        <img src="assets/img/team/{{member.image_url}}" class="card-img-top"
+                            alt="{{member.member.Name}}">
+
                         <div class="row">
                             <div class="col-md-12">
                                 <br>
@@ -56,3 +57,4 @@ permalink: /our-team
             </div>
         </div>
     </section>
+</section>
