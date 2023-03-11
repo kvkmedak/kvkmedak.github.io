@@ -39,7 +39,7 @@ layout: default
                 </div>
             </div>
             <hr>
-            <img src="/assets/img/administration-building.jpeg" class="img-fluid" alt="KVK Medak">
+            <img src="/assets/img/mandate.png" class="img-fluid" alt="KVK Medak">
             <br>
             <br>
             {% include mandate.html %}
@@ -63,7 +63,7 @@ layout: default
                         <div class="col-md-12">
                             <h5><strong>Ekalavya Grameena Vikas Foundation</strong></h5>
                             <br>
-                        </div>                        
+                        </div>
                         <div class="col-md-3">
                             <img src="/assets/img/egvf-logo.jpg" class="img-fluid" alt="EGVF | KVK | KVK Medak">
                         </div>
@@ -104,17 +104,19 @@ layout: default
                     <hr>
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/assets/img/demounits/azolla.jpeg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/assets/img/demounits/custom-hiring-center.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/assets/img/demounits/farmpond.jpg" class="d-block w-100" alt="...">
-                          </div>
+                            <div class="carousel-item active">
+                                <img src="/assets/img/gallery/5.png" class="d-block w-100" alt="...">
+                            </div>
+                            {% assign photos = site.data.gallery %}
+                            {% for photo in photos %}
+                            {{photo.image_url}}
+                            <div class="carousel-item">
+                                <img src="/assets/img/gallery/{{photo.image_url}}" class="d-block w-100"
+                                    alt="KVK Gallery">
+                            </div>
+                            {% endfor %}
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>

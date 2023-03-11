@@ -1,0 +1,40 @@
+---
+layout: page
+title: Awards and Recognition
+description: "Farmer Producer Organisation - KVK Medak | Awards and Recognition"
+permalink: /awards-and-recognition
+---
+<section id="portfolio" class="portfolio">
+    <div class="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div>
+            <h1>Awards and Recognition</h1>
+            <hr>
+            <br>
+        </div>
+        <div class="row portfolio-container" style="position: relative; height: 1026px;">
+            {% assign data = site.data.awards-and-recognition %}
+            {% for row in data %}
+            {% if row.image_url %}
+            <div class="col-lg-12 col-md-12 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+               <h3>{{row.title}}</h3>
+                <div class="portfolio-wrap"> <img src="assets/img/awards-and-recognition/{{row.image_url}}" class="img-fluid"
+                        alt="{{row.title}}">
+                    <div class="portfolio-info">
+                        <br>
+                        <br>
+                        
+                        <div class="portfolio-links">
+                            <a href="assets/img/awards-and-recognition/{{row.image_url}}" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="{{row.title}}"><i class="bi bi-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="text-center">{{row.title}}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
